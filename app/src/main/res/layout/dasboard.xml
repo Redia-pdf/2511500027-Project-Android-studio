@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- HEADER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:background="@drawable/bg_cover"
+            android:orientation="vertical"
+            android:padding="20dp"
+            >
+
+            <!-- PROFILE -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/profil"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/bg_cirlce"
+                    android:clipToOutline="true"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Halo,"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Marsya Maharani Monica Redia"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NIM : 2511500087"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- CARD IPK -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="-40dp"
+            android:paddingHorizontal="20dp">
+
+            <!-- IPK -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_dasboard_card"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:elevation="8dp">
+
+                <TextView
+                    android:text="IPK Kumulatif"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="3.82"
+                    android:textColor="#D96CFF"
+                    android:textStyle="bold"
+                    android:textSize="38sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <!-- TOTAL MK -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/bg_dasboard_card"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:elevation="8dp">
+
+                <TextView
+                    android:text="Total Mata Kuliah"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="7"
+                    android:textColor="#D96CFF"
+                    android:textStyle="bold"
+                    android:textSize="40sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- CARD JADWAL -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/bg_dasboard_card"
+            android:orientation="vertical"
+            android:padding="25dp"
+            android:elevation="8dp">
+
+            <TextView
+                android:id="@+id/txtIpk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selasa"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:text="Jadwal Kuliah Hari Ini"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="16.30 - 18.20  |  Kalkulus 2"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="19.00 - 21.00  |  Desain dan Pemograman Mobile"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
