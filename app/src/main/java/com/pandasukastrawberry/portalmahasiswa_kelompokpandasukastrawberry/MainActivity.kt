@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -24,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         // TEXTVIEW GRADIENT
-        val txtIpk = findViewById<TextView>(R.id.main)
+        val txtIpk = findViewById<TextView>(R.id.txtIpk)
 
         txtIpk.post {
 

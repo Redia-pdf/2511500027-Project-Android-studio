@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Simpan di res/menu/bottom_menu.xml -->
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/nav_dashboard"
+        android:id="@+id/menu_dashboard"
         android:icon="@drawable/ic_home"
-        android:title="Dashboard"/>
+        android:title="Dasboard" />
 
     <item
-        android:id="@+id/nav_jadwal"
+        android:id="@+id/menu_jadwal"
         android:icon="@drawable/ic_jadwal"
-        android:title="Jadwal"/>
+        android:title="Jadwal" />
 
     <item
-        android:id="@+id/nav_nilai"
+        android:id="@+id/menu_nilai"
         android:icon="@drawable/ic_nilai"
-        android:title="Nilai"/>
+        android:title="Nilai" />
 
     <item
-        android:id="@+id/nav_profil"
-        android:icon="@drawable/ic_profile"
-        android:title="Profil"/>
+        android:id="@+id/menu_profil"
+        android:icon="@drawable/ic_profil"
+        android:title="Profil" />
 
 </menu>
