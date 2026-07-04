@@ -11,6 +11,7 @@
         android:orientation="vertical">
 
         <!-- HEADER -->
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="240dp"
@@ -18,20 +19,24 @@
             android:padding="20dp">
 
             <!-- Logo -->
+
             <ImageView
                 android:id="@+id/imgLogo"
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:layout_alignParentEnd="true"
-                android:src="@drawable/logoisbal" />
+                android:src="@drawable/logoisbal"/>
 
             <!-- Foto Profil -->
+
             <ImageView
                 android:id="@+id/imgProfil"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginTop="50dp"
-                android:src="@drawable/profil" />
+                android:src="@drawable/profil"/>
+
+            <!-- Halo -->
 
             <TextView
                 android:id="@+id/txtHalo"
@@ -44,6 +49,8 @@
                 android:textColor="#FFFFFF"
                 android:textSize="14sp"/>
 
+            <!-- Nama -->
+
             <TextView
                 android:id="@+id/txtNama"
                 android:layout_width="wrap_content"
@@ -55,6 +62,8 @@
                 android:textStyle="bold"
                 android:textColor="#FFFFFF"
                 android:textSize="17sp"/>
+
+            <!-- NIM -->
 
             <TextView
                 android:id="@+id/txtNim"
@@ -70,11 +79,12 @@
         </RelativeLayout>
 
         <!-- MENU HARI -->
+
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:scrollbars="none">
+            android:scrollbars="none"
+            android:padding="10dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -120,7 +130,7 @@
 
         </HorizontalScrollView>
 
-        <!-- Judul -->
+        <!-- JUDUL -->
 
         <TextView
             android:layout_width="wrap_content"
@@ -128,17 +138,17 @@
             android:text="Jadwal Kuliah"
             android:textStyle="bold"
             android:textSize="22sp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginStart="16dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tahun Ajaran 2025/2026 Semester Genap"
-            android:textColor="#777777"
             android:textSize="13sp"
+            android:textColor="#777777"
             android:layout_marginStart="16dp"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginBottom="10dp">
+        </TextView>
         <!-- CARD JADWAL KULIAH -->
 
         <androidx.cardview.widget.CardView
@@ -153,37 +163,37 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/bg_card"
                 android:orientation="horizontal"
-                android:padding="15dp">
+                android:padding="15dp"
+                android:background="@drawable/bg_card">
 
                 <!-- Tanggal -->
 
                 <LinearLayout
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:background="@drawable/bg_date"
+                    android:orientation="vertical"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:background="@drawable/bg_date">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="26"
-                        android:textColor="#7B2EF2"
+                        android:text="27"
+                        android:textStyle="bold"
                         android:textSize="22sp"
-                        android:textStyle="bold"/>
+                        android:textColor="#7B2EF2"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Jun"
-                        android:textColor="#7B2EF2"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold"
+                        android:textColor="#7B2EF2"/>
 
                 </LinearLayout>
 
-                <!-- Informasi -->
+                <!-- Informasi Mata Kuliah -->
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -195,44 +205,44 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="IT202"
+                        android:text="MT102"
                         android:textColor="#888888"
                         android:textSize="12sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Sistem Manajemen Basis Data"
-                        android:textSize="18sp"
+                        android:text="Agama"
                         android:textStyle="bold"
+                        android:textSize="18sp"
                         android:textColor="#000000"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="🕒 16.30 - 18.20"
+                        android:text="13.50 - 15.20"
                         android:textSize="13sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="📍 Ruang 2.1.6"
+                        android:text="Ruang 2.1.6"
                         android:textSize="13sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="👩‍🏫 Melati Suci M., M.Kom."
+                        android:text="Suharno, S.Ag., MH"
                         android:textSize="13sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:text="2 SKS"
                         android:textColor="#7B2EF2"
-                        android:textStyle="bold"
-                        android:layout_marginTop="5dp"/>
+                        android:textStyle="bold"/>
 
                 </LinearLayout>
 
@@ -254,8 +264,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Jadwal UAS"
-                android:textStyle="bold"
                 android:textSize="20sp"
+                android:textStyle="bold"
                 android:textColor="#000000"/>
 
             <TextView
@@ -271,11 +281,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="10dp"
             android:text="Tahun Ajaran 2025/2026 Semester Genap"
             android:textSize="12sp"
-            android:textColor="#888888"
-            android:layout_marginStart="16dp"
-            android:layout_marginBottom="10dp"/>
+            android:textColor="#888888"/>
+
+        <!-- CARD UAS -->
+
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -283,20 +296,20 @@
             android:layout_marginEnd="16dp"
             android:layout_marginTop="10dp"
             app:cardCornerRadius="18dp"
-            app:cardElevation="4dp">
+            app:cardElevation="5dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="15dp"
                 android:orientation="horizontal"
+                android:padding="15dp"
                 android:background="@drawable/bg_card">
 
                 <!-- Tanggal -->
 
                 <LinearLayout
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
                     android:orientation="vertical"
                     android:gravity="center"
                     android:background="@drawable/bg_date">
@@ -304,46 +317,54 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="25"
-                        android:textSize="22sp"
+                        android:text="27"
                         android:textStyle="bold"
+                        android:textSize="22sp"
                         android:textColor="#D96CF5"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Jun"
+                        android:textStyle="bold"
                         android:textColor="#D96CF5"/>
 
                 </LinearLayout>
 
-                <!-- Isi -->
+                <!-- Informasi -->
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:layout_marginStart="15dp">
+                    android:layout_marginStart="15dp"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Sistem Manajemen Basis Data"
+                        android:text="Agama"
                         android:textStyle="bold"
-                        android:textSize="17sp"/>
+                        android:textSize="17sp"
+                        android:textColor="#000000"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="16.30 - 18.20"
-                        android:textSize="13sp"
-                        android:layout_marginTop="8dp"/>
+                        android:layout_marginTop="8dp"
+                        android:text="13.50 - 15.20"
+                        android:textSize="13sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Ruang 2.1.6"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Suharno, S.Ag., MH"
                         android:textSize="13sp"/>
 
                 </LinearLayout>
@@ -358,48 +379,49 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="3dp">
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:gravity="center_vertical"
                 android:padding="15dp"
-                android:gravity="center_vertical">
+                android:background="@drawable/bg_card">
 
-                <!-- Icon -->
+                <!-- Icon Catatan -->
 
                 <ImageView
                     android:layout_width="45dp"
                     android:layout_height="45dp"
                     android:src="@drawable/ic_note"/>
 
-                <!-- Text -->
+                <!-- Isi Catatan -->
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:layout_marginStart="12dp">
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Belum ada catatan?"
+                        android:text="Belum ada catatan"
                         android:textStyle="bold"
-                        android:textSize="14sp"
+                        android:textSize="15sp"
                         android:textColor="#000000"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Yuk, tambahkan catatan agar pengingatmu lebih mudah."
-                        android:textSize="12sp"
-                        android:textColor="#777777"/>
+                        android:text="Tambahkan catatan agar tidak lupa dengan tugas atau jadwal penting."
+                        android:textColor="#777777"
+                        android:textSize="12sp"/>
 
                 </LinearLayout>
 
@@ -409,14 +431,17 @@
                     android:id="@+id/btnTambahCatatan"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
-                    android:text="+ Tambah Catatan"
+                    android:text="Tambah"
+                    android:textAllCaps="false"
                     android:textColor="#FFFFFF"
-                    android:textSize="11sp"
                     android:background="@drawable/bg_button"/>
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
+        <!-- PENUTUP -->
+
     </LinearLayout>
 
 </ScrollView>
