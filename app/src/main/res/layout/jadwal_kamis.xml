@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/bottomNav"
     android:background="#F6F6F6">
 
     <LinearLayout
@@ -13,68 +21,92 @@
         <!-- HEADER -->
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="240dp"
-            android:background="@drawable/bg_header"
-            android:padding="20dp">
+            android:layout_height="160dp"
+            android:background="@drawable/bg_cover"
+            android:paddingStart="20dp"
+            android:paddingTop="28dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="20dp">
 
-            <!-- Logo -->
-            <ImageView
-                android:id="@+id/imgLogo"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:layout_alignParentEnd="true"
-                android:src="@drawable/logoisbal" />
-
-            <!-- Foto Profil -->
-            <ImageView
-                android:id="@+id/imgProfil"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_marginTop="50dp"
-                android:src="@drawable/profil" />
-
-            <TextView
-                android:id="@+id/txtHalo"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_toEndOf="@id/imgProfil"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="55dp"
-                android:text="Halo,"
-                android:textColor="#FFFFFF"
-                android:textSize="14sp"/>
+                android:gravity="end">
 
-            <TextView
-                android:id="@+id/txtNama"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toEndOf="@id/imgProfil"
-                android:layout_below="@id/txtHalo"
-                android:layout_marginStart="15dp"
-                android:text="Marsya Maharani Monica Redia"
-                android:textStyle="bold"
-                android:textColor="#FFFFFF"
-                android:textSize="17sp"/>
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/logoisbal"/>
 
-            <TextView
-                android:id="@+id/txtNim"
-                android:layout_width="wrap_content"
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_toEndOf="@id/imgProfil"
-                android:layout_below="@id/txtNama"
-                android:layout_marginStart="15dp"
-                android:text="NIM : 2511500087"
-                android:textColor="#FFFFFF"
-                android:textSize="13sp"/>
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@drawable/bg_cirlce"
+                    android:clipToOutline="true"
+                    android:outlineProvider="background"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profil"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="18dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Halo,"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/txtNama"
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:text="Marsya Maharani Monica Redia"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:maxLines="2"/>
+
+                    <TextView
+                        android:id="@+id/txtNim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="NIM : 2511500087"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
 
         </RelativeLayout>
 
         <!-- MENU HARI -->
+        <!-- MENU HARI -->
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:scrollbars="none">
+            android:paddingHorizontal="1dp"
+            android:paddingVertical="8dp"
+            android:scrollbars="none"
+            android:fillViewport="true"
+            android:overScrollMode="never">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -82,12 +114,21 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/btnSelasa"
+                    android:id="@+id/btnSenin"
                     android:layout_width="90dp"
                     android:layout_height="45dp"
-                    android:text="Selasa"
+                    android:text="Senin"
                     android:textColor="#FFFFFF"
                     android:background="@drawable/bg_button"/>
+
+                <Button
+                    android:id="@+id/btnSelasa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/bg_button"
+                    android:text="Selasa"
+                    android:textColor="#FFFFFF" />
 
                 <Button
                     android:id="@+id/btnRabu"
@@ -104,8 +145,8 @@
                     android:layout_height="45dp"
                     android:layout_marginStart="10dp"
                     android:text="Kamis"
-                    android:textColor="#FFFFFF"
-                    android:background="@drawable/bg_button"/>
+                    android:textColor="#D96CF5"
+                    android:background="#FFFFF"/>
 
                 <Button
                     android:id="@+id/btnJumat"
@@ -159,29 +200,6 @@
 
                 <!-- Tanggal -->
 
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:background="@drawable/bg_date"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="26"
-                        android:textColor="#7B2EF2"
-                        android:textSize="22sp"
-                        android:textStyle="bold"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Jun"
-                        android:textColor="#7B2EF2"
-                        android:textStyle="bold"/>
-
-                </LinearLayout>
 
                 <!-- Informasi -->
 
@@ -239,6 +257,10 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
+
+
+
         <!-- JUDUL UAS -->
 
         <LinearLayout
@@ -351,6 +373,7 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
         <!-- ================= CARD CATATAN ================= -->
 
         <androidx.cardview.widget.CardView
@@ -417,6 +440,21 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
     </LinearLayout>
 
 </ScrollView>
+
+<com.google.android.material.bottomnavigation.BottomNavigationView
+android:id="@+id/bottomNav"
+android:layout_width="match_parent"
+android:layout_height="90dp"
+android:layout_alignParentBottom="true"
+android:background="#FFFFFF"
+app:itemIconTint="@color/nav_button_color"
+app:itemTextColor="@color/nav_button_color"
+app:labelVisibilityMode="labeled"
+app:menu="@menu/bottom_menu"
+app:cardElevation="6dp"/>
+
+</RelativeLayout>
