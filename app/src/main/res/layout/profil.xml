@@ -1,6 +1,545 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottomNav"
+            android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- HEADER -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/bg_cover">
+
+                <!-- NOTIFIKASI -->
+
+                <!-- DOT NOTIF -->
+
+                <ImageView
+                    android:id="@+id/btnNotif"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="35dp"
+                    android:src="@drawable/ic_notification"
+                    app:tint="#FFFFFF" />
+
+                <!-- LOGO -->
+
+                <ImageView
+                    android:id="@+id/imgLogo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/logoisbal"/>
+
+                <!-- FOTO -->
+
+                <ImageView
+                    android:id="@+id/imgFoto"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@drawable/bg_cirlce"
+                    android:outlineProvider="background"
+                    android:layout_centerHorizontal="true"
+                    android:clipToOutline="true"
+                    android:layout_marginTop="30dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profil"/>
+
+                <!-- NAMA -->
+
+                <TextView
+                    android:id="@+id/txtNama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgFoto"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="6dp"
+                    android:text="Marsya Maharani Monica Redia"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold"/>
+
+                <!-- NIM -->
+
+                <TextView
+                    android:id="@+id/txtNim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtNama"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:text="NIM : 2511500087"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+            <!-- ================= INFORMASI PRIBADI ================= -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="-35dp"
+                app:cardCornerRadius="22dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="18dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Informasi Pribadi"
+                        android:textColor="#202020"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <!-- JURUSAN -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/bg_cirlce"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_school"
+                            app:tint="#2E1A9A"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="14dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Jurusan"
+                                android:textColor="#555555"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Teknik Informatika"
+                                android:textColor="#202020"
+                                android:textStyle="bold"
+                                android:textSize="16sp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="12dp"
+                        android:background="#DDDDDD"/>
+
+                    <!-- FAKULTAS -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/bg_cirlce"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_faculty"
+                            app:tint="#2E1A9A"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="14dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Fakultas"
+                                android:textColor="#555555"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Teknologi Informasi"
+                                android:textColor="#202020"
+                                android:textStyle="bold"
+                                android:textSize="16sp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="12dp"
+                        android:background="#DDDDDD"/>
+
+                    <!-- EMAIL -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/bg_cirlce"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_email"
+                            app:tint="#2E1A9A"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="14dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Email"
+                                android:textColor="#555555"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="abc01@example.com"
+                                android:textColor="#202020"
+                                android:textStyle="bold"
+                                android:textSize="16sp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="12dp"
+                        android:background="#DDDDDD"/>
+
+                    <!-- NOMOR HP -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/bg_cirlce"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_phone"
+                            app:tint="#2E1A9A"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="14dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nomor Handphone"
+                                android:textColor="#555555"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="08xxxxxxxxxx"
+                                android:textColor="#202020"
+                                android:textStyle="bold"
+                                android:textSize="16sp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="12dp"
+                        android:background="#DDDDDD"/>
+
+                    <!-- ALAMAT -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/bg_cirlce"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_location"
+                            app:tint="#2E1A9A"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="14dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Alamat"
+                                android:textColor="#555555"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Jl. Cempedak No.12"
+                                android:textColor="#202020"
+                                android:textStyle="bold"
+                                android:textSize="16sp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- ================= MENU ================= -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="22dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="18dp">
+
+                    <!-- EDIT PROFIL -->
+
+                    <LinearLayout
+                        android:id="@+id/cardEditProfil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingVertical="10dp">
+
+                        <ImageView
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/bg_cirlce"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_edit"
+                            app:tint="#2E1A9A"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="14dp"
+                            android:layout_weight="1"
+                            android:text="Edit Profil"
+                            android:textColor="#202020"
+                            android:textSize="17sp"
+                            android:textStyle="bold"/>
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_arrow_right"
+                            app:tint="#555555"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#DDDDDD"/>
+
+                    <!-- PENGATURAN -->
+
+                    <LinearLayout
+                        android:id="@+id/layoutPengaturan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingVertical="10dp">
+
+                        <ImageView
+                            android:id="@+id/imgPengaturan"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/bg_cirlce"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_setting"
+                            app:tint="#2E1A9A"/>
+
+                        <TextView
+                            android:id="@+id/txtPengaturan"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="14dp"
+                            android:layout_weight="1"
+                            android:text="Pengaturan"
+                            android:textColor="#202020"
+                            android:textSize="17sp"
+                            android:textStyle="bold"/>
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_arrow_right"
+                            app:tint="#555555"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#DDDDDD"/>
+
+                    <!-- KELUAR -->
+
+                    <LinearLayout
+                        android:id="@+id/layoutKeluar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingVertical="10dp">
+
+                        <ImageView
+                            android:id="@+id/imgKeluar"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_cirlce"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_logout"
+                            app:tint="#D32F2F"/>
+
+                        <TextView
+                            android:id="@+id/txtKeluar"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="14dp"
+                            android:layout_weight="1"
+                            android:text="Keluar"
+                            android:textColor="#D32F2F"
+                            android:textSize="17sp"
+                            android:textStyle="bold"/>
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_arrow_right"
+                            app:tint="#555555"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- VERSI -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="Versi 1.0.5"
+                android:textColor="#999999"
+                android:textSize="13sp"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+        </ScrollView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:background="#FFFFFF"
+            app:itemIconTint="@color/nav_button_color"
+            app:itemTextColor="@color/nav_button_color"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_menu"/>
+
+    </RelativeLayout>

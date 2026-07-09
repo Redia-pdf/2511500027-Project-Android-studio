@@ -6,11 +6,31 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logoisbal"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PortalMahasiswaKelompokPandaSukaStrawberry">
+
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".ForgotPasswordVerifikasiActivity" />
+        <activity android:name=".ForgotPasswordNewActivity" />
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".JadwalSeninActivity" />
+        <activity android:name=".JadwalSelasaActivity" />
+        <activity android:name=".JadwalRabuActivity" />
+        <activity android:name=".JadwalKamisActivity" />
+        <activity android:name=".JadwalJumatActivity" />
+        <activity android:name=".NilaiActivity" />
+        <activity android:name=".ProfilActivity" />
+        <activity android:name=".JadwalUjianActivity"/>
+        <activity android:name=".CatatanPengingatActivity"/>
+        <activity android:name=".NotifikasiSemuaActivity"/>
+        <activity android:name=".NotifikasiUnreadActivity"/>
+        <activity android:name=".PengaturanActivity"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

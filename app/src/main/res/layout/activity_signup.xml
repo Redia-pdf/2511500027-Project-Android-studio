@@ -36,6 +36,7 @@
                 android:padding="5dp">
 
                 <LinearLayout
+                    android:id="@+id/layoutSignIn"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -43,6 +44,7 @@
                     android:background="@android:color/transparent">
 
                     <TextView
+                        android:id="@+id/txtSignIn"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sign In"
@@ -77,6 +79,7 @@
                 android:layout_marginTop="30dp"/>
 
             <EditText
+                android:id="@+id/edtEmail"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:hint="abc01@example.com"
@@ -94,6 +97,7 @@
                 android:layout_marginTop="25dp"/>
 
             <EditText
+                android:id="@+id/edtPassword"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:hint="*************"
@@ -111,6 +115,7 @@
                 android:layout_marginTop="25dp"/>
 
             <EditText
+                android:id="@+id/edtConfirmPassword"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:hint="*************"
@@ -121,6 +126,7 @@
 
             <!-- BUTTON LOGIN -->
             <Button
+                android:id="@+id/btnSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:text="Sign Up"

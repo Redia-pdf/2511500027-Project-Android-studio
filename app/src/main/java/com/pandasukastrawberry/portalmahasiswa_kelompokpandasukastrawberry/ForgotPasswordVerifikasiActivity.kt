@@ -5,22 +5,23 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : AppCompatActivity() {
+class ForgotPasswordVerifikasiActivity : AppCompatActivity() {
 
-    private lateinit var btnLogin: Button
+    private lateinit var btnVerification: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.forgot_password_verifikasi)
 
-        btnLogin = findViewById(R.id.btnLogin)
+        btnVerification = findViewById(R.id.btnVerification)
 
-        btnLogin.setOnClickListener {
+        btnVerification.setOnClickListener {
 
             startActivity(
-                Intent(this, LoginActivity::class.java)
+                Intent(this, ForgotPasswordNewActivity::class.java)
             )
 
         }
+
     }
 }

@@ -143,7 +143,7 @@
                         android:layout_marginStart="10dp"
                         android:text="Rabu"
                         android:textColor="#D96CF5"
-                        android:background="FFFFF"/>
+                        android:background="#FFFFFF"/>
 
                     <Button
                         android:id="@+id/btnKamis"
@@ -284,6 +284,7 @@
                     android:textColor="#000000"/>
 
                 <TextView
+                    android:id="@+id/txtLihatSemua"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Lihat Semua"

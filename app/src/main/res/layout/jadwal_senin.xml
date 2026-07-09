@@ -125,7 +125,7 @@
                         android:layout_height="45dp"
                         android:text="Senin"
                         android:textColor="#D96CF5"
-                        android:background="#FFFFF"/>
+                        android:background="#FFFFFF"/>
 
                     <Button
                         android:id="@+id/btnSelasa"
@@ -357,6 +357,7 @@
                     android:textColor="#000000"/>
 
                 <TextView
+                    android:id="@+id/txtLihatSemua"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Lihat Semua"

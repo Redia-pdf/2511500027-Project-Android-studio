@@ -57,6 +57,7 @@
                     android:gravity="center">
 
                     <TextView
+                        android:id="@+id/txtSignUpTab"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sign Up"
@@ -76,6 +77,7 @@
                 android:layout_marginTop="30dp"/>
 
             <EditText
+                android:id="@+id/edtEmail"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:hint="abc01@example.com"
@@ -85,6 +87,7 @@
 
             <!-- PASSWORD -->
             <TextView
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Password"
@@ -93,6 +96,7 @@
                 android:layout_marginTop="25dp"/>
 
             <EditText
+                android:id="@+id/edtPassword"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:hint="*************"
@@ -102,6 +106,7 @@
                 android:layout_marginTop="10dp"/>
 
             <TextView
+                android:id="@+id/txtForgotPassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Lupa Password?"
@@ -112,6 +117,7 @@
 
             <!-- BUTTON LOGIN -->
             <Button
+                android:id="@+id/btnLogin"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:text="Login"
@@ -136,6 +142,7 @@
                     android:text="Don’t an account? "/>
 
                 <TextView
+                    android:id="@+id/txtSignUp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Sign Up"

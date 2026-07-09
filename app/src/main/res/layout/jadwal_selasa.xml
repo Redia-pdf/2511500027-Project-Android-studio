@@ -124,7 +124,7 @@
                         android:layout_width="90dp"
                         android:layout_height="45dp"
                         android:text="Senin"
-                        android:textColor="#FFFF"
+                        android:textColor="#FFFFFF"
                         android:background="@drawable/bg_button"/>
 
                     <Button
@@ -132,7 +132,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="45dp"
                         android:layout_marginStart="10dp"
-                        android:background="fffff"
+                        android:background="#FFFFFF"
                         android:text="Selasa"
                         android:textColor="#D96CF5"/>
 
@@ -357,6 +357,7 @@
                     android:textColor="#000000"/>
 
                 <TextView
+                    android:id="@+id/txtLihatSemua"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Lihat Semua"

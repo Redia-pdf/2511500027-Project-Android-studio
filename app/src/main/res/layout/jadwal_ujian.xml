@@ -27,7 +27,7 @@
                 android:layout_height="28dp"
                 android:layout_centerVertical="true"
                 android:src="@drawable/ic_arrow_back"
-                android:tint="@android:color/white"/>
+                app:tint="#ffff"/>
 
             <!-- Judul -->
 
@@ -37,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_toEndOf="@id/btnBack"
-                android:layout_marginStart="18dp"
+                android:layout_marginStart="16dp"
                 android:text="Jadwal Ujian"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
@@ -762,70 +762,29 @@
                                 android:textSize="17sp"
                                 android:textColor="#000000"/>
 
-                            <TextView
+                            <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
+                                android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
                                 android:text="🕒 13.50 - 15.20"
                                 android:textSize="12sp"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="📍 Ruang 2.1.6"
+                                android:layout_marginLeft="12dp"
+                                android:text=" Ruang 2.1.6"
                                 android:textSize="12sp"/>
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="👨‍🏫 Suharno, S.Ag., MH"
-                                android:textSize="12sp"/>
+                            </LinearLayout>
 
                         </LinearLayout>
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <!-- ===================== CATATAN ===================== -->
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
-                    android:text="Catatan"
-                    android:textStyle="bold"
-                    android:textSize="18sp"/>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    app:cardCornerRadius="16dp"
-                    app:cardElevation="4dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="16dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Belum ada catatan."
-                            android:textColor="#666666"
-                            android:textSize="14sp"/>
-
-                        <Button
-                            android:id="@+id/btnTambahCatatan"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:text="+ Tambah Catatan"
-                            android:textAllCaps="false"
-                            android:background="@drawable/bg_button"
-                            android:textColor="#FFFFFF"/>
 
                     </LinearLayout>
 
@@ -838,112 +797,3 @@
     </LinearLayout>
 
 </ScrollView>
-    <!-- ===================== HARI KAMIS ===================== -->
-
-<TextView
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_marginTop="20dp"
-android:text="Kamis"
-android:textStyle="bold"
-android:textSize="17sp"
-android:textColor="#000000"/>
-
-    <!-- CARD UJIAN KAMIS -->
-
-<androidx.cardview.widget.CardView
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:layout_marginTop="10dp"
-app:cardCornerRadius="16dp"
-app:cardElevation="4dp">
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:padding="15dp"
-    android:background="@drawable/bg_card">
-
-    <!-- Tanggal -->
-
-    <LinearLayout
-        android:layout_width="65dp"
-        android:layout_height="65dp"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:background="@drawable/bg_date">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="25"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:textColor="#D96CF5"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Jun"
-            android:textColor="#D96CF5"
-            android:textStyle="bold"/>
-
-    </LinearLayout>
-
-    <!-- Informasi Mata Kuliah -->
-
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_marginStart="15dp"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="IT202"
-            android:textColor="#888888"
-            android:textSize="12sp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sistem Manajemen Basis Data"
-            android:textStyle="bold"
-            android:textSize="17sp"
-            android:textColor="#000000"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="🕒 16.30 - 18.20"
-            android:textSize="13sp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="📍 Ruang 2.1.6"
-            android:textSize="13sp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="👩‍🏫 Melati Suci M., M.Kom."
-            android:textSize="13sp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="2 SKS"
-            android:textStyle="bold"
-            android:textColor="#7B2EF2"/>
-
-    </LinearLayout>
-
-</LinearLayout>
-
-</androidx.cardview.widget.CardView>
